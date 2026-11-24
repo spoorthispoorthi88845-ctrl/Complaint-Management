@@ -48,3 +48,18 @@ function displayComplaints() {
 }
 
 displayComplaints();
+
+function updateComplaint(id, newStatus) {
+    complaints = complaints.map(function(complaint) {
+        if (complaint.id === id) {
+            complaint.status = newStatus;
+        }
+        return complaint;
+    });
+
+    localStorage.setItem("complaints", JSON.stringify(complaints));
+
+    displayComplaints();
+}
+
+
