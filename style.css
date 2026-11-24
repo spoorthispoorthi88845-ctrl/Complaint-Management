@@ -47,3 +47,37 @@ button {
 button:hover {
     background-color: #263b70;
 }
+
+/* Admin Dashboard Design */
+
+#adminComplaints {
+    max-width: 750px;
+    margin: 25px auto;
+}
+
+#adminComplaints div {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #cccccc;
+    border-left: 6px solid #345995;
+}
+
+#adminComplaints h3 {
+    color: #263b70;
+    text-align: left;
+}
+
+#adminComplaints p {
+    color: #444444;
+    line-height: 1.6;
+}
+
+#adminComplaints select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #345995;
+    margin-top: 10px;
+}
