@@ -16,6 +16,8 @@ function displayStudentComplaints() {
 
         const title = document.createElement("h3");
         title.textContent = complaint.title;
+const id = document.createElement("p");
+id.textContent = "Complaint ID: " + complaint.id;
 
         const category = document.createElement("p");
         category.textContent = "Category: " + complaint.category;
