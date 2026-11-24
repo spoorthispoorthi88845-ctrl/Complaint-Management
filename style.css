@@ -81,3 +81,25 @@ button:hover {
     border: 1px solid #345995;
     margin-top: 10px;
 }
+
+/* Navigation Menu */
+
+nav {
+    text-align: center;
+    background-color: #263b70;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
