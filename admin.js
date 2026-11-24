@@ -16,6 +16,8 @@ function displayAdminComplaints() {
 
         const title = document.createElement("h3");
         title.textContent = complaint.title;
+const id = document.createElement("p");
+id.textContent = "Complaint ID: " + complaint.id;
 
         const name = document.createElement("p");
         name.textContent = "Student: " + complaint.name;
