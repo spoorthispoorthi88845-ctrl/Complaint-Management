@@ -28,7 +28,7 @@ id.textContent = "Complaint ID: " + complaint.id;
         const status = document.createElement("p");
         status.textContent = "Complaint Status: " + complaint.status;
 
-        card.append(title, category, description, status);
+        card.append(title,id,category, description, status);
         container.appendChild(card);
     });
 }
