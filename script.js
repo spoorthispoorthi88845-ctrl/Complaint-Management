@@ -26,7 +26,9 @@ form.addEventListener("submit", function(event) {
 
     alert("Complaint submitted successfully!");
 
-    form.reset();
+form.reset();
+
+displayComplaints();
 });
 // Display submitted complaints
 function displayComplaints() {
