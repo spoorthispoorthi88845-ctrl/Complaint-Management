@@ -28,3 +28,23 @@ form.addEventListener("submit", function(event) {
 
     form.reset();
 });
+// Display submitted complaints
+function displayComplaints() {
+    const container = document.getElementById("complaints");
+
+    container.innerHTML = "<h2>Submitted Complaints</h2>";
+
+    complaints.forEach(function(complaint) {
+        container.innerHTML += `
+            <div>
+                <h3>${complaint.title}</h3>
+                <p>Student: ${complaint.name}</p>
+                <p>Category: ${complaint.category}</p>
+                <p>Description: ${complaint.description}</p>
+                <p>Status: ${complaint.status}</p>
+            </div>
+        `;
+    });
+}
+
+displayComplaints();
