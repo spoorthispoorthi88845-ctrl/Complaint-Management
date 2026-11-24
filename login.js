@@ -1,0 +1,21 @@
+
+function adminLogin() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    const message = document.getElementById("message");
+
+    if (username === "admin" && password === "12345") {
+        message.textContent = "Login successful!";
+        message.style.color = "green";
+
+        setTimeout(function() {
+            window.location.href = "admin.html";
+        }, 1000);
+
+    } else {
+        message.textContent = "Invalid username or password!";
+        message.style.color = "red";
+    }
+
+    return false;
+}
