@@ -63,7 +63,7 @@ deleteButton.addEventListener("click", function() {
 });
 
 
-        item.append(title, id, name, category, description, status, select);
+        item.append(title, id, name, category, description, status, select, deleteButton);
         container.appendChild(item);
     });
 }
