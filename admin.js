@@ -48,7 +48,7 @@ id.textContent = "Complaint ID: " + complaint.id;
             displayAdminComplaints();
         });
 
-        item.append(title, name, category, description, status, select);
+        item.append(title, id, name, category, description, status, select);
         container.appendChild(item);
     });
 }
