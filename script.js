@@ -42,6 +42,12 @@ function displayComplaints() {
                 <p>Category: ${complaint.category}</p>
                 <p>Description: ${complaint.description}</p>
                 <p>Status: ${complaint.status}</p>
+
+<select onchange="updateComplaint(${complaint.id}, this.value)">
+    <option value="Pending">Pending</option>
+    <option value="In Progress">In Progress</option>
+    <option value="Resolved">Resolved</option>
+</select>
             </div>
         `;
     });
