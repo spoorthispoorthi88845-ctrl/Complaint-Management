@@ -48,6 +48,21 @@ id.textContent = "Complaint ID: " + complaint.id;
             displayAdminComplaints();
         });
 
+const deleteButton = document.createElement("button");
+deleteButton.textContent = "Delete Complaint";
+
+deleteButton.addEventListener("click", function() {
+    if (confirm("Are you sure you want to delete this complaint?")) {
+        complaints = complaints.filter(function(c) {
+            return c.id !== complaint.id;
+        });
+
+        localStorage.setItem("complaints", JSON.stringify(complaints));
+        displayAdminComplaints();
+    }
+});
+
+
         item.append(title, id, name, category, description, status, select);
         container.appendChild(item);
     });
