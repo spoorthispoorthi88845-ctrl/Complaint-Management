@@ -52,3 +52,8 @@ function displayAdminComplaints() {
 }
 
 displayAdminComplaints();
+
+function logout() {
+    window.location.href = "login.html";
+}
+
